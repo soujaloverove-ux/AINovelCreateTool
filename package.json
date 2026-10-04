@@ -1,0 +1,23 @@
+{
+  "name": "qoder-novel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "本地 AI 自动小说创作工具",
+  "scripts": {
+    "dev:server": "pnpm --filter @qoder-novel/server dev",
+    "dev:web": "pnpm --filter @qoder-novel/web dev",
+    "build:server": "pnpm --filter @qoder-novel/server build",
+    "build:web": "pnpm --filter @qoder-novel/web build",
+    "test:sse": "pnpm --filter @qoder-novel/server exec ts-node --transpile-only --compiler-options '{\"module\":\"commonjs\",\"target\":\"es2021\"}' ../../apps/web/test/sse-parser.test.ts",
+    "test:windows-launcher": "node --test scripts/windows-launcher.test.mjs",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,vue,json}\"",
+    "format:check": "prettier --check \"apps/**/*.{ts,tsx,vue,json}\""
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.12.1"
+  },
+  "packageManager": "pnpm@10.12.1"
+}
