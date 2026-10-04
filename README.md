@@ -339,4 +339,13 @@ pnpm typeorm migration:run -d dist/config/ormconfig.js
 
 ## License
 
-MIT
+[MIT License](LICENSE) © 2026 [soujaloverove-ux](https://github.com/soujaloverove-ux)
+
+## 给作者打赏
+
+如果这个项目对你有帮助，欢迎请作者喝杯咖啡。感谢你的支持！
+
+<p align="center">
+  <img src="assets/donate/wechat.jpg" alt="微信收款二维码" width="360" />
+  <img src="assets/donate/alipay.jpg" alt="支付宝收款二维码" width="360" />
+</p>
